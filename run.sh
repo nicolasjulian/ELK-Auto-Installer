@@ -59,7 +59,7 @@ systemctl status nginx
 
 
 #LOGSTASH
-apt-get install logstash
+apt-get install logstash -y
 cat <<EOF>> /etc/logstash/conf.d/input-filebeat.conf
 input {
   beats {
