@@ -33,7 +33,7 @@ read answer
 #KIBANA
 apt-get install kibana -y
 cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.original
-sed -i 's/#server.host: "localhost"/server.host: "localhost"/' /etc/elasticsearch/elasticsearch.yml
+sed -i 's/#server.host: "localhost"/server.host: "localhost"/' /etc/kibana/kibana.yml
 
 echo -e "$MAG [Starting ELASTICSEARCH]"
 
